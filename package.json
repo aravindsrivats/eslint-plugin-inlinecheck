@@ -1,0 +1,25 @@
+{
+    "name": "eslint-plugin-inlinecheck",
+    "version": "0.0.1",
+    "description": "Checks if a function will be considered as an inline by the v8 engine.",
+    "keywords": [
+        "eslint",
+        "eslintplugin",
+        "eslint-plugin",
+        "inlinecheck",
+        "inline"
+    ],
+    "author": "Aravind Srivastan<asrivatsan@paypal.com>",
+    "main": "index.js",
+    "dependencies": {},
+    "peerDependencies": {
+        "eslint": ">=0.8.0"
+    },
+    "devDependencies": {
+        "eslint": "~1.2.0"
+    },
+    "engines": {
+        "node": ">=0.10.0"
+    },
+    "license": "ISC"
+}
