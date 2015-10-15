@@ -8,7 +8,7 @@
 
 module.exports = {
     rules: {
-        "inline-check": require('./rules/inlinecheck');
+        "inline-check": require('./rules/inlinecheck')
     },
     rulesConfig: {
         "inline-check": 1
