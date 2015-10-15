@@ -1,6 +1,6 @@
 {
     "name": "eslint-plugin-inlinecheck",
-    "version": "0.0.1",
+    "version": "0.0.3",
     "description": "Checks if a function will be considered as an inline by the v8 engine.",
     "keywords": [
         "eslint",
@@ -17,6 +17,13 @@
     },
     "devDependencies": {
         "eslint": "~1.2.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/aravindsrivats/eslint-plugin-inlinecheck"
+    },
+    "publishConfig": {
+        "registry": "http://registry.npmjs.org"
     },
     "engines": {
         "node": ">=0.10.0"
