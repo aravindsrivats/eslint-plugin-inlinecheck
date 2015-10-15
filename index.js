@@ -7,10 +7,10 @@
 "use strict";
 
 module.exports = {
-    rules = {
-            "inline-check": require('./rules/inlinecheck');
-        },
-        rulesConfig = {
-            "inline-check": 1
-        }
+    rules: {
+        "inline-check": require('./rules/inlinecheck');
+    },
+    rulesConfig: {
+        "inline-check": 1
+    }
 };
