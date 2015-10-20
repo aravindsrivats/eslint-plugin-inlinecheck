@@ -1,0 +1,21 @@
+.idea
+.settings
+.build
+.beans
+.DS_Store
+node_modules
+test/coverage
+test/report/coverage
+/logs
+/cdbs
+*.log
+oom_1
+*.swp
+.editorconfig
+
+# OS generated files #
+######################
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
