@@ -1,10 +1,20 @@
 module.exports = function(context) {
+    var DEFAULT_MIN_CHARACTERS = 600;
+    var CONSIDERED_MAX_CHARACTERS = 650;
+
+    function checkInlineAbility(node) {
+        var sourceLength = context.getSourceCode().getText(node).length;
+        if (sourceLength > DEFAULT_MIN_CHARACTERS && sourceLength < CONSIDERED_MAX_CHARACTERS) {
+            context.report(node, "Function exceeds default limit by " + eval(sourceLength - DEFAULT_MIN_CHARACTERS) + " characters.");
+        }
+    };
+
     return {
-        "Program": function(node) {
-            var source = context.getSourceCode().getText(node);
-            if (source.length > 600 && source.length < 650) {
-                context.report(node, "This wont be an inline function.");
-            }
+        "FunctionDeclaration": function(node) {
+            checkInlineAbility(node);
+        },
+        "FunctionExpression": function(node) {
+            checkInlineAbility(node);
         }
     };
 };
