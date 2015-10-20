@@ -1,6 +1,6 @@
 {
     "name": "eslint-plugin-inlinecheck",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "Checks if a function will be considered as an inline by the v8 engine.",
     "keywords": [
         "eslint",
